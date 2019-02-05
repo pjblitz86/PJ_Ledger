@@ -33,7 +33,22 @@ p {
 }
 
 .text-primary {
-  color: #e7c311;
+  color: #b09408;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-primary {
+  background: #574903;
+  color: #f4f4f4;
 }
 
 .l-heading {
@@ -63,22 +78,42 @@ p {
   padding: 3rem 0;
 }
 
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
 .btn {
   display: inline-block;
   color: #fff;
-  background: #e7c311;
+  background: #b09408;
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 5px;
 }
 
 .btn:hover {
-  background: #b09408;
+  background: #947c06;
 }
 
 .btn-dark {
   background: #333;
   color: #fff;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted #444;
 }
 
 /* NAVBAR */
@@ -107,7 +142,7 @@ p {
 }
 
 #navbar ul li a:hover {
-  background: #e7c311;
+  background: #b09408;
   border-radius: 5px;
 }
 
@@ -135,7 +170,7 @@ p {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Section: WHAT WE DO */
+/* Section: WHAT we do */
 #what .items {
   display: flex;
   padding: 1rem;
@@ -148,8 +183,56 @@ p {
 }
 
 #what .items .item i {
-  background: #e7c311;
+  background: #b09408;
   padding: 1rem;
   border-radius: 50%;
   margin-bottom: 1rem;
+}
+
+/* Section: WHO we are */
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+}
+
+#who .who-img {
+  background: url("../img/people.jpg") no-repeat center center/cover;
+}
+
+/* CLIENTS */
+#clients .items {
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+/* Section: CONTACT */
+#contact {
+  display: flex;
+}
+
+#contact .map,
+#contact .contact-form {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
 }
